@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".rute.RuteActivity"
+    android:orientation="vertical"
+    android:background="#6600BFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/asal"
+        android:textSize="12sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TxtLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/latitude"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/TxtLon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/longitude"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/StatusAsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/status_asal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/tujuan"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/Lat_awal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude_awal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Lon_awal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/longitude_awal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Lat_akhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude_akhir"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Lon_akhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/longitude_akhir"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TxtTujuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TxtNamaNodeAwal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/SpinnerTujuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tujuan"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtNamaNodeAkhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/avoid"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/SpinnerAvoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/mode"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/SpinnerMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/TxtAvoid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textJmlNode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="gone" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cari_jalur"
+        android:id="@+id/ButtonHitung"
+        android:background="#FF00BFFF"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".rute.RuteActivity"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ListView
+            android:id="@+id/ListJalur"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFFFF"
+            android:text="Jarak Tempuh Dijkstra"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/textView24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/TxtJarak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFFFF"
+            android:hint="@string/_0_km"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/textJarakGoogle"
+            app:layout_constraintStart_toEndOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFFFF"
+            android:text="@string/waktu_tempuh"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/TxtWaktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFFFF"
+            android:hint="@string/_0_hours_0_minutes"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/TxtJarak"
+            app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFFFF"
+            android:text="Jarak Tempuh Google"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textJarakGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFFFF"
+            android:hint="@string/_0_km"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView24" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

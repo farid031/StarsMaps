@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNode"
+        android:text="@string/node"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Node"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtJarak"
+        android:text="@string/jarak"
+        android:textSize="12sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Jarak"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLatitude"
+        android:text="@string/latitude"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Latitude"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLongitude"
+        android:text="@string/longitude"
+        android:textSize="12sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Longitude"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

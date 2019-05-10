@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.farid.starsmaps">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher_starsmaps"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_starsmaps_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".splash_screen.SplashScreenActivity"
+            android:theme="@style/SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".main_activity.MainActivity"
+            android:label="Halaman Utama"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".help_activity.HelpActivity"
+            android:label="Halaman Bantuan"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".maps_toko_activity.MapsTokoActivity"
+            android:label="Maps Toko"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".tentang_activity.TentangApps"
+            android:label="Halaman About"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".rute.RuteActivity"
+            android:label="Pencarian Rute"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".list_toko.ListTokoActivity"
+            android:label="Halaman Daftar Toko"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
